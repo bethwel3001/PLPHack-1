@@ -39,18 +39,6 @@ I've also integrated **Google Fonts** and **Font Awesome** for enhanced typograp
 
 ---
 
-## 📂 Project Structure
-PowerHack-1/  
-├── index.html          # Main HTML file  
-├── css3/style.css      # Stylesheet 
-├── images/             # Project images 
-├── assets/             # Additional resources          
-│   └── fonts/          # Custom fonts from fontawesome.com or google
-├── README.md           # This file (The documentation) 
-└── .gitignore          # Files to ignore in Git  
-
----
-
 ## 🔗 Essential Links & Resources
 
 ### 1. Font Awesome
@@ -80,5 +68,5 @@ PowerHack-1/
 ## 🌟 Thanks for checking out my project!
 **Let me know your feedback—I’m always learning! 😊**
 
-# Happy Coding! 💻✨
-<div align="center"> Made with ❤️ using HTML, CSS, Git & GitHub by Be TU</div>
+Happy Coding! 💻✨
+<div align="center"> Made with ❤️ using HTML, CSS, Git & GitHub by Be Tu</div>
