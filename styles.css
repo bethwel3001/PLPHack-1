@@ -56,7 +56,7 @@
   .desktop-nav {
     background-color: var(--nav-bg);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;
     padding: 1.2rem 0;
@@ -64,7 +64,7 @@
   }
   
   .logo {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
@@ -350,132 +350,4 @@
     }
   }
 
-  /* Mode toggler */
-  /* ===== DARK MODE TOGGLE ===== */
-:root {
-    /* Light Mode Defaults */
-    --bg-color: #f0f2f5;
-    --text-color: #2d3748;
-    --nav-bg: #ffffff;
-    --card-bg: #ffffff;
-    --toggle-bg: #e2e8f0;
-  }
   
-  /* Toggle Styles (Shared) */
-  .toggle-input {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-  
-  .toggle-label {
-    --toggle-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: calc(var(--toggle-size) * 2);
-    height: var(--toggle-size);
-    background: var(--toggle-bg);
-    border-radius: 50px;
-    padding: 3px;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transition: background 0.3s ease;
-  }
-  
-  .toggle-label i {
-    font-size: calc(var(--toggle-size) * 0.6);
-    z-index: 1;
-    transition: opacity 0.3s ease;
-  }
-  
-  .toggle-label .fa-moon {
-    color: #4a6cf7;
-    opacity: 1;
-  }
-  
-  .toggle-label .fa-sun {
-    color: #f6ad55;
-    position: absolute;
-    right: 3px;
-    opacity: 0;
-  }
-  
-  .toggle-ball {
-    position: absolute;
-    left: 3px;
-    width: calc(var(--toggle-size) - 6px);
-    height: calc(var(--toggle-size) - 6px);
-    background: var(--white);
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Checked State */
-  .toggle-input:checked + .toggle-label {
-    background: #2d3748;
-  }
-  
-  .toggle-input:checked + .toggle-label .toggle-ball {
-    transform: translateX(calc(var(--toggle-size)));
-  }
-  
-  .toggle-input:checked + .toggle-label .fa-moon {
-    opacity: 0;
-  }
-  
-  .toggle-input:checked + .toggle-label .fa-sun {
-    opacity: 1;
-  }
-  
-  /* Desktop Toggle */
-  .theme-toggle-wrapper {
-    display: none; /* Hidden on mobile */
-    margin-left: 1.5rem;
-  }
-  
-  /* Mobile Toggle */
-  .mobile-theme-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: block;
-  }
-  
-  /* Dark Mode Variables */
-  .toggle-input:checked ~ .container,
-  .toggle-input:checked ~ section {
-    --bg-color: #1a202c;
-    --text-color: #f8f9fa;
-    --nav-bg: #2d3748;
-    --card-bg: #2d3748;
-    --toggle-bg: #4a5568;
-  }
-  
-  /* Apply Variables */
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  .desktop-nav {
-    background-color: var(--nav-bg);
-  }
-  
-  .content-card {
-    background-color: var(--card-bg);
-  }
-  
-  /* Responsive Visibility */
-  @media (min-width: 992px) {
-    .theme-toggle-wrapper {
-      display: block;
-    }
-    .mobile-theme-toggle {
-      display: none;
-    }
-  }
