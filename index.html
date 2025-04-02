@@ -3,27 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be Tu | Portfolio</title>
-    <!-- Stylesheet link -->
-    <link rel="stylesheet" href="css3/style.css">
+    <title>Be Tu - Portfolio</title>
 
-    <!-- links to Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<!-- Fontawesome -->
+    <!-- THEME TOGGLE -->
+    <meta name="theme-color" content="#f0f2f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)">
+    <meta name="description" content="Bethwel's Portfolio - Frontend Developer specializing in creating responsive and user-friendly web applications. Explore my work and get in touch!">  
+    <!-- Styles iportation -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="About.css">
+
+    <!-- Fonts and icons importation -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Mode toggler -->
+     
 </head>
 <body>
- <!-- Hero Section -->
-<section id="home">
-    <div class="container hero">
-        <img src="assets/images/profile.jpg" alt="Logo" class="profile-img">
-        <h1>Bethwel Kiplagat</h1>
-        <p>Building digital experiences with HTML & CSS</p>
-        <div class="cta-buttons">
-            <a href="#projects" class="btn">Projects</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <!-- Navigation -->
+    <nav class="desktop-nav">
+        <div class="container">
+            <a href="#home" class="logo">Be Tu</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <div class="theme-toggle-wrapper">
+                <input type="checkbox" id="darkmode-toggle" class="toggle-input">
+                <label for="darkmode-toggle" class="toggle-label">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <span class="toggle-ball"></span>
+                </label>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </nav>
+    <div class="mobile-theme-toggle">
+        <input type="checkbox" id="darkmode-toggle-mobile" class="toggle-input">
+        <label for="darkmode-toggle-mobile" class="toggle-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Bethwel</span></h1>
+                <p>Frontend Developer</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="assets/images/profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+               <!-- ---------------About--------------->
+                <!-- ------------------------ -->
+     <section id="about" class="about">
+        <div class="container">
+          <div class="about-image">
+            <img src="assets/images/profile.jpg" alt="Be Tu">
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>I'm a passionate frontend developer with expertise in creating responsive and user-friendly web applications. My focus is on clean code and pixel-perfect designs.</p>
+              <p>With 2 years of experience, I've helped numerous clients bring their digital visions to life through innovative solutions.</p>
+            </div>
+            <div class="skills">
+              <h3>My Skills</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Vercel</span>
+                <span class="skill-tag">Netlify</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
