@@ -10,7 +10,9 @@
     gap: 2rem;
     margin-top: 3rem;
   }
-  
+  .section-title{
+    color: #4a6cf7;
+  }
   .project-card {
     background: var(--white);
     border-radius: 10px;

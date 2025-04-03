@@ -51,31 +51,67 @@
   section {
     padding: var(--section-padding);
   }
-  
-  /* ===== NAVIGATION ===== */
   .desktop-nav {
-    background-color: var(--nav-bg);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    /* position: fixed; */
-    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(15px); /* Glass effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    position: fixed; /* Fixed at the top */
+    top: 13px; /* Adjust top spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Shrink to content */
+    padding: 0.5rem 1.5rem; /* Smaller padding */
+    border-radius: 50px; /* Rounded pill shape */
     z-index: 1000;
-    padding: 1.2rem 0;
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft white border */
   }
   
-  .logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--primary);
+  /* Navbar Container */
+  .desktop-nav .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
     text-decoration: none;
-    font-family: var(--font-heading);
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease;
   }
   
-  .logo:hover {
-    transform: scale(1.05);
-    color: var(--primary-light);
+  /* Logo Styling */
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* On Hover Effect */
+  .nav-links a:hover {
+    color: #ddd;
+    transform: translateY(-2px);
+  }
+  
+  /* Hide Navbar on Small Screens */
+  @media (max-width: 767px) {
+    .desktop-nav {
+      display: none;
+    }
   }
   
   /* ===== HOME SECTION ===== */

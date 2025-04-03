@@ -51,7 +51,7 @@
   
   .skills h3 {
     font-family: var(--font-heading);
-    color: var(--dark);
+    color: #4a6cf7;
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
