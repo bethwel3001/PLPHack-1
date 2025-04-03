@@ -35,7 +35,7 @@
     <section id="home" class="section home">
         <div class="container">
             <div class="home-content">
-                <h1>Hi, I'm <span>Bethwel</span></h1>
+                <h1>Hi, I'm <span>Bethwel<h2>Kiplagat</h2></span></h1>
                 <p>Software Engineer</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary">Projects</a>
@@ -133,21 +133,21 @@
       <!--Projects  -->
       <section id="projects" class="projects">
         <div class="container">
-          <h2 class="section-title">My Projects</h2>
+          <h2 class="section-title">Projects</h2>
           <div class="projects-grid">
             <!-- Project 1 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/images/project1.jpg" alt="E-Commerce Website">
+                <img src="assets/images/project-1.png" alt="Website">
               </div>
               <div class="project-info">
-                <h3>E-Commerce Store</h3>
-                <p>Full-featured online store with cart functionality and payment integration</p>
+                <h3>Proffesional portfolio</h3>
+                <p>A website updated with my current tech stack, projects and contact information. Built with react, tailwind and framer motion.</p>
                 <div class="project-links">
-                  <a href="#" aria-label="GitHub Repository">
+                  <a href="https://github.com/bethwel3001/Dev.git" aria-label="GitHub Repository">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="#" aria-label="Live Demo">
+                  <a href="https://bethwel-lagat.netlify.app/" aria-label="Live Demo">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -157,16 +157,16 @@
             <!-- Project 2 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="assets/images/project2.jpg" alt="Weather App">
+                <img src="assets/images/project-2.png" alt="Event App">
               </div>
               <div class="project-info">
-                <h3>Weather Dashboard</h3>
-                <p>Real-time weather forecasts with location detection and 5-day outlook</p>
+                <h3>Eventify V1</h3>
+                <p>Real-time event management application for hoisting and booking events. Built with React, Tailwind, Flask and MySQL. The MVP version is live.</p>
                 <div class="project-links">
                   <a href="#" aria-label="GitHub Repository">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="#" aria-label="Live Demo">
+                  <a href="https://shiny-buttercream-f01411.netlify.app/" aria-label="Live Demo">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -175,18 +175,16 @@
       <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-image">
-                  <img src="assets/images/project1.jpg" alt="E-Commerce Website">
+                  <img src="assets/images/Travel.png" alt="TravelWebsite">
                 </div>
                 <div class="project-info">
-                  <h3>E-Commerce Store</h3>
-                  <p>Full-featured online store with cart functionality and payment integration</p>
+                  <h3>Travel website</h3>
+                  <p>A travel destination discovery website. Still in progress , the websites aim is to link destinations to tourists and vice versa.</p>
                   <div class="project-links">
-                    <a href="#" aria-label="GitHub Repository">
+                    <a href="https://github.com/bethwel3001/travel-website-assignment" aria-label="GitHub Repository">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" aria-label="Live Demo">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -194,24 +192,64 @@
         </div>
       </section>
       <!-- CONTACT -->
-      <!-- footer -->
-      <footer class="footer">
-      <div class="container">
-          <h3 class="footer-heading">Let's Build Something Together</h3>
-          <h4>Im Bethwe Kiplagat alias Be Tu. A Kenyan developer based in Kisumu region.
-          Iam Passionate about Tech, and skilled in fullstack, though love frontend part. 
-          Be sure to visit my live website on this footer to learn more about me and schedule a chat with me we bring your idea to life.
-          </h4>
-        <div class="footer-social">
-            <a href="facebook.com/" aria-label="Facebook" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://bethwel-lagat.netlify.app/" aria-label="Website" class="social-icon">
-              <i class="fas fa-globe"></i>
-            </a>
-          </div>
-          <p class="footer-copyright">© 2025 Be Tu. All rights reserved.</p>
+       <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <div class="contact-wrapper">
+      <!-- Left Side (Social Card) -->
+      <div class="contact-card">
+        <h3>I can bring your idea to life!</h3>
+        <p>Check my socials and let's connect.</p>
+        <p>Location: Kisumu, Kenya</p>
+        <p>Work preferance: Onsite, Freelance.</p>
+        <div class="social-links">
+          <a href="https://x.com/am_kiplagat" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/bethwel-kiplagat-1314912a0/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:kiplagatbethwelk@gmail.com" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
         </div>
-      </footer>
+      </div>
+      <!-- Right Side (Contact Form) -->
+      <form 
+      action="https://formspree.io/f/xoveknvj"
+      method="POST"
+      class="contact-form">
+      <!-- Linked the form with Formspree API, for real time feedback receival -->
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+     <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <h3 class="footer-heading">Let's Build Something Together</h3>
+    <p class="footer-text">
+      I'm Bethwel Kiplagat, alias Be Tu. A Kenyan developer passionate about tech, skilled in fullstack, but deeply in love with frontend. Visit my website below to learn more and bring your ideas to life!
+    </p>
+    <div class="footer-social">
+      <a href="https://facebook.com/" aria-label="Facebook" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <abbr title="Website">
+        <a href="https://bethwel-lagat.netlify.app/" aria-label="Website" class="social-icon">
+          <i class="fas fa-globe"></i>
+        </a>
+      </abbr>
+    </div>
+    <p class="footer-copyright">© 2025 Be Tu. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
